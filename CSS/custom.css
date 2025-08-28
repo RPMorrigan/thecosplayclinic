@@ -1,0 +1,41 @@
+:root {
+    /* Colors */
+    --bgColor: lavender;
+    --banner: lightpink;
+    --blockText: lavenderblush;
+
+    --padding: 2rem;
+    --sectionPad: 1rem;
+    --margin: 1rem;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: var(--bgColor);
+    color: c;
+}
+h1 {
+    margin: 0;
+}
+
+header {
+    background: var(--banner);
+    padding: var(--padding);
+}
+nav ul {
+    display: flex;
+    flex-direction: row wrap;
+}
+.links {
+    list-style-type: none;
+    margin: 0.25rem;
+}
+.links a {
+    text-decoration: none;
+}
+section {
+    margin: var(--margin);
+    padding: var(--sectionPad);
+    background: var(--blockText);
+}
