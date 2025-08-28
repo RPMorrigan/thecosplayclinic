@@ -1,22 +1,48 @@
-:root {
-    /* Colors */
-    --bgColor: lavender;
-    --banner: lightpink;
-    --blockText: lavenderblush;
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+:root {
+/* colors */
+    --placeholderBG: plum;
+    --bgColor: lavender;
+    --blockText: lavenderblush;
+    --banner: lightpink;
+    --banTxtCol: hotpink;
+    --txtPink: mediumvioletred;
+/* spacing */
     --padding: 2rem;
     --sectionPad: 1rem;
     --margin: 1rem;
+/* fonts */
+    --titleFont: chango;
+    --pageFont: quicksand, sans-serif;
+/* fontStyling */
+    --titleStyle: 0.1rem 0.1rem 0 white,
+                    -0.1rem -0.1rem 0 white,
+                    0.1rem -0.1rem 0 white,
+                    -0.1rem 0.1rem 0 white;
+    --linkStyle: 0.05rem 0.05rem 0 lightcyan,
+                    -0.05rem -0.05rem 0 lightcyan,
+                    0.05rem -0.05rem 0 lightcyan,
+                    -0.05rem 0.05rem 0 lightcyan,
+                    0.05rem 0rem 0 lightcyan
+                    -0.05rem 0rem 0 lightcyan,
+                    0rem 0.05rem 0 lightcyan,
+                    0rem -0.05rem 0 lightcyan;
+    /* general styling */
+    --radius: 0.5rem;
 }
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: var(--pageFont);
     padding: 0;
     margin: 0;
     background: var(--bgColor);
-    color: c;
 }
 h1 {
+    color: var(--banTxtCol);
+    font-family: var(--titleFont);
     margin: 0;
+    text-shadow: var(--titleStyle);
 }
 
 header {
@@ -26,10 +52,16 @@ header {
 nav ul {
     display: flex;
     flex-direction: row wrap;
+    justify-content: space-between;
+    text-shadow: var(--linkStyle);
+}
+nav a {
+    color: var(--txtPink);
 }
 .links {
     list-style-type: none;
     margin: 0.25rem;
+    font-weight: bold;
 }
 .links a {
     text-decoration: none;
@@ -38,4 +70,27 @@ section {
     margin: var(--margin);
     padding: var(--sectionPad);
     background: var(--blockText);
+    border-radius: var(--radius);
+}
+.frontPageGalFrame {
+    height: 15rem;
+    width: 100%;
+    background: var(--placeholderBG);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+.newsImgPlaceholder {
+    height: 3rem;
+    width: 6rem;
+    background: var(--placeholderBG);
+}
+.placeholderImgStaff {
+    height: 3rem;
+    width: 3rem;
+    background: var(--placeholderBG);
+}
+footer {
+    background: var(--banner);
+    padding: var(--padding);
+    text-align: center;
 }
