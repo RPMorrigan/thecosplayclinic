@@ -10,7 +10,7 @@
     --banTxtCol: hotpink;
     --txtPink: mediumvioletred;
 /* spacing */
-    --padding: 2rem;
+    --padding: 0rem 3rem 0rem 3rem;
     --sectionPad: 1rem;
     --margin: 1rem;
 /* fonts */
@@ -21,14 +21,6 @@
                     -0.1rem -0.1rem 0 white,
                     0.1rem -0.1rem 0 white,
                     -0.1rem 0.1rem 0 white;
-    --linkStyle: 0.05rem 0.05rem 0 lightcyan,
-                    -0.05rem -0.05rem 0 lightcyan,
-                    0.05rem -0.05rem 0 lightcyan,
-                    -0.05rem 0.05rem 0 lightcyan,
-                    0.05rem 0rem 0 lightcyan
-                    -0.05rem 0rem 0 lightcyan,
-                    0rem 0.05rem 0 lightcyan,
-                    0rem -0.05rem 0 lightcyan;
     /* general styling */
     --radius: 0.5rem;
 }
@@ -43,7 +35,6 @@ h1 {
     color: var(--banTxtCol);
     font-family: var(--titleFont);
     font-size: 3rem;
-    margin: 0;
     text-shadow: var(--titleStyle);
 }
 h2 {
@@ -54,17 +45,18 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     background: var(--banner);
     padding: var(--padding);
 }
 nav ul {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
-    text-shadow: var(--linkStyle);
 }
 nav a {
-    color: var(--txtPink);
+    color: var(--banTxtCol);
+    font-size: 1.25rem;
 }
 .links {
     list-style-type: none;
@@ -73,6 +65,27 @@ nav a {
 }
 .links a {
     text-decoration: none;
+}
+.homeNavLink {
+    color: red;
+}
+.scheduleNavLink {
+    color: salmon;
+}
+.galleryNavLink {
+    color: yellow;
+}
+.servicesNavLink {
+    color: green;
+}
+.aboutNavLink {
+    color: blue;
+}
+.contactNavLink {
+    color: indigo;
+}
+.partnersNavLink {
+    color: violet;
 }
 section {
     margin: var(--margin);
@@ -113,5 +126,6 @@ footer {
     }
     nav ul {
         justify-content: space-evenly;
+        align-items: flex-end;
     }
 }
