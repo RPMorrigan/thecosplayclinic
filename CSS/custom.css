@@ -37,15 +37,23 @@ body {
     padding: 0;
     margin: 0;
     background: var(--bgColor);
+    color: var(--txtPink);
 }
 h1 {
     color: var(--banTxtCol);
     font-family: var(--titleFont);
+    font-size: 3rem;
     margin: 0;
     text-shadow: var(--titleStyle);
 }
+h2 {
+    color: var(--banTxtCol);
+}
 
 header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     background: var(--banner);
     padding: var(--padding);
 }
@@ -93,4 +101,17 @@ footer {
     background: var(--banner);
     padding: var(--padding);
     text-align: center;
+}
+
+@media (min-width: 720px) {
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    nav {
+        width: 55%;
+    }
+    nav ul {
+        justify-content: space-evenly;
+    }
 }
