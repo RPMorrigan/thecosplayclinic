@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
+/* images */
+    --squareHeart: url('/images/squareHeart.svg');
 /* colors */
     --placeholderBG: plum;
     --bgColor: lavender;
@@ -66,27 +68,32 @@ nav a {
 .links a {
     text-decoration: none;
 }
-.homeNavLink {
+.links a:hover {
+    background: url('/images/squareHeart.svg') center no-repeat;
+    background-size: contain;
+    mix-blend-mode: multiply;
+}
+.homeNavLink a:hover {
     color: red;
 }
-.scheduleNavLink {
+.scheduleNavLink a:hover {
     color: salmon;
 }
-.galleryNavLink {
+.galleryNavLink a:hover {
     color: yellow;
 }
-.servicesNavLink {
+.servicesNavLink a:hover {
     color: green;
 }
-.aboutNavLink {
+.aboutNavLink a:hover {
     color: blue;
 }
-.contactNavLink {
+.contactNavLink a:hover {
     color: indigo;
 }
-.partnersNavLink {
+.partnersNavLink a:hover {
     color: violet;
-}
+} 
 section {
     margin: var(--margin);
     padding: var(--sectionPad);
