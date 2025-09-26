@@ -3,7 +3,7 @@
 
 :root {
 /* images */
-    --squareHeart: url('/images/squareHeart.svg');
+    --squareHeart: url('../images/squareHeart.svg');
 /* colors */
     --placeholderBG: plum;
     --bgColor: lavender;
@@ -69,7 +69,7 @@ nav a {
     text-decoration: none;
 }
 .links a:hover {
-    background: url('/images/squareHeart.svg') center no-repeat;
+    background: url('../images/squareHeart.svg') center no-repeat;
     background-size: contain;
     mix-blend-mode: multiply;
 }
